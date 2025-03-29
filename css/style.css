@@ -130,3 +130,15 @@ section article img {
 
 
 /* TODO: media query for tablet and desktop */
+@media screen and (min-width: 900px){
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background: yellow;
+    }
+}
+
+/* some javascript button */
+
