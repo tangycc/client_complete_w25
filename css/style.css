@@ -1,5 +1,5 @@
 /* skip to main */
-.skip {
+.skip{
     position: absolute;
     left: -999px;
     top: auto;
@@ -8,14 +8,14 @@
     overflow: hidden;
 }
 
-.skip:focus {
+.skip:focus{
     position: static;
     width: auto;
     height: auto;
 }
 
 /* navigation bar */
-nav ul {
+nav ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -23,44 +23,45 @@ nav ul {
     background: #00274C;
 }
 
-nav ul li a {
+nav ul li a{
     text-decoration: none;
     color: #FFFFFF;
 }
 
 /* highlight the current webpage */   
-a.current {
+a.current{
     color: #FFCB05;
 }
 
-h1 {
-    font-size: large;
+h1{
+    font-size: x-large;
     font-family: Montserrat, Nunito Sans, Merriweather;
     color: #00274C;
     font-weight: bolder;
     padding: 20px 0 20px 0;
 }
 
-#logo {
+#logo{
     max-width: 10%;
 }
 
 
 /* general format */
-li {
-    font-size: medium;
+li{
+    font-size: large;
     font-family: Montserrat, Nunito Sans, Merriweather;
     padding: 5px 0 5px 0;
 }
 
 p {
-    font-size: medium;
+    font-size: large;
     font-family: Montserrat, Nunito Sans, Merriweather;
     padding: 5px 0 5px 0;
 }
 
+/* larger text */
 h1{
-    font-size: large;
+    font-size: x-large;
     font-family: Montserrat, Nunito Sans, Merriweather;
     color: #00274C;
     font-weight: bolder;
@@ -68,7 +69,7 @@ h1{
 }
 
 h2{
-    font-size: large;
+    font-size: x-large;
     font-family: Montserrat, Nunito Sans, Merriweather;
     border: solid #00274C 2px;
     background: #00274C;
@@ -76,24 +77,32 @@ h2{
     font-weight: bolder;
 }
 
-a:hover {
+h3{
+    font-size: x-large;
+    font-family: Montserrat, Nunito Sans, Merriweather;
+    border: solid #00274C 2px;
+    background: #00274C;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+a:hover{
     text-decoration: underline;
 }
 
 
-img {
+img{
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-div {
+div{
     padding: 10px;
 }
 
-
 /* main content */
-section {
+section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -101,7 +110,7 @@ section {
 }
 
 section h2{
-    font-size: large;
+    font-size: x-large;
     font-family: Montserrat, Nunito Sans, Merriweather;
     border: solid #00274C 2px;
     background: #00274C;
@@ -111,34 +120,56 @@ section h2{
 }
 
 section p{
-    font-size: medium;
+    font-size: large;
     font-family: Montserrat, Nunito Sans, Merriweather;
     grid-column: 1 / -1;
 }
 
-section article {
+section article{
     border: 5px dashed #75988d;
     padding: 15px;
     border-radius: 8px;
     background: #FFFFFF;
 }
 
-section article img {
+section article img{
     width: 100%;
     border-radius: 5px;
 }
 
+/* Footer can use some styling and centering */
+footer{
+    background-color: #00274C;
+}
+
+footer p{
+    color:#FFCB05;
+}
+
+footer a{
+    color:#FFCB05;
+}
 
 /* TODO: media query for tablet and desktop */
+/* some javascript button */
 @media screen and (min-width: 900px){
     nav ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        background: yellow;
+        background: #00274C;
     }
 }
 
-/* some javascript button */
+@media screen and (min-width: 1200px){
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background: #00274C;
+    }
+}
 
+/* unique challenge */
