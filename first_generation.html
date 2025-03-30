@@ -58,7 +58,10 @@
 
     <footer>
         <p>First Generation | <a href="https://firstgen.umich.edu/">firstgen </a></p>
+        <p>© Copyrights <span id="year"></span> by Yicheng. All rights reserved.</p>
     </footer>
-    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

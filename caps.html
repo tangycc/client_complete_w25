@@ -53,7 +53,10 @@
 
     <footer>
         <p>Counseling and Psychological Services | <a href="https://caps.umich.edu/">CAPS </a></p>
+        <p>© Copyrights <span id="year"></span> by Yicheng. All rights reserved.</p>
     </footer>
-    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

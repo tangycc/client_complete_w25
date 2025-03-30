@@ -108,6 +108,7 @@
     </main>
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p>© Copyrights <span id="year"></span> by Yicheng. All rights reserved.</p>
     </footer>
 
     <script>
@@ -124,6 +125,8 @@
             result.textContent = "Your potential is limitless! You can find helpful resources on this website.";
           }
         }
+
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
