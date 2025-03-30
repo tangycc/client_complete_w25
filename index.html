@@ -95,11 +95,36 @@
                 </ul>
             </article>
         </section>
+
+
+        <p id="question">Fun question: Where is the initial location of U-M?</p>
+  
+        <input type="text" id="answer" placeholder="Type your answer here">
+        <button onclick="checkAnswer()">Guess</button>
+      
+        <p id="result"></p>
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+    </footer>
+
+    <script>
+        const correctAnswer = "Detroit";
+    
+        function checkAnswer() {
+          const userAnswer = document.getElementById('answer').value.trim();
+          const result = document.getElementById('result');
+    
+          if (userAnswer === correctAnswer) {
+            result.textContent = "Correct! The Initial Location wasn not in Ann Arbor. The University of Michigan (UMich) was initially founded in Detroit in 1817 as the Catholepistemiad or University of Michigania. ";
+            result.style.color = "green";
+          } else {
+            result.textContent = "Nope! Try again!";
+            result.style.color = "red";
+          }
+        }
+    </script>
 </body>
 </html>

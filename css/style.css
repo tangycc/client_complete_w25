@@ -86,13 +86,9 @@ h3{
     font-weight: bolder;
 }
 
-a:hover{
-    text-decoration: underline;
-}
-
 
 img{
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     display: block;
 }
@@ -104,7 +100,7 @@ div{
 /* main content */
 section{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
 }
@@ -151,25 +147,60 @@ footer a{
 }
 
 /* TODO: media query for tablet and desktop */
-/* some javascript button */
 @media screen and (min-width: 900px){
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+
+    /* better grid display */
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    section h2{
+        font-size: x-large;
+        font-family: Montserrat, Nunito Sans, Merriweather;
+        border: solid #00274C 2px;
         background: #00274C;
+        color: #FFFFFF;
+        font-weight: bolder;
+        grid-column: 1 / -1;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* with mouse: hover effect for links*/
+    a:hover{
+        text-decoration: underline;
+    }
+
+    /* animation */
+    #logo{
+        animation: mymove 3s forwards;
+    }
+
+    img{
+        animation: mymove 3s forwards;
+    }
+    
+    @keyframes mymove {
+        from {opacity: 0; width: 25px;}
+        to {opacity: 1; width: 475px;}
+    }
+
+}
+
+@media (prefers-reduced-motion) {
+    #logo{
+        animation: none;
+    }
+
+    img{
+        animation: none;
     }
 }
 
-@media screen and (min-width: 1200px){
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        background: #00274C;
-    }
-}
-
-/* unique challenge */
