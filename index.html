@@ -97,7 +97,7 @@
         </section>
 
 
-        <p id="question">Fun question: Where is the initial location of U-M?</p>
+        <p id="question">Fun question: How confident are you in your ability to succeed as a UM graduate?(scale 1-10)</p>
         <label for="answer">Your answer:</label>
         <input type="text" id="answer" placeholder="Type your answer here">
         <button onclick="check()">Confirm</button>
@@ -111,19 +111,17 @@
     </footer>
 
     <script>
-        const key = "detroit";
+        const key = ["7","8","9","10"];
     
         function check() {
-          const userAnswer = document.getElementById('answer').value.toLowerCase().trim();
+          const userAnswer = document.getElementById('answer').value.trim();
           
-          if (userAnswer === key) {
+          if (key.includes(userAnswer)) {
             let result = document.getElementById('result');
-            result.textContent = "Correct! The Initial Location wasn not in Ann Arbor. The University of Michigan (UMich) was initially founded in Detroit in 1817 as the Catholepistemiad or University of Michigania. ";
-            result.style.color = "green";
+            result.textContent = "That's amazing. Success is yours to claim!";
           } else {
             let result = document.getElementById('result');
-            result.textContent = "Nope! Try again!";
-            result.style.color = "red";
+            result.textContent = "Your potential is limitless! You can find helpful resources on this website.";
           }
         }
     </script>
